@@ -9,3 +9,7 @@ Initialized on a Mac OS using Node v10.16.0 (npm v6.13.4) using `create-react-ap
 ```shell
 npx create-react-app react-ui --use-npm
 ```
+
+## Maintainer(s)
+
+* @austinjalexander

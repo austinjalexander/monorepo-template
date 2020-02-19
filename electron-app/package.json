@@ -1,0 +1,58 @@
+{
+  "name": "electron-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0"
+  },
+  "scripts": {
+    "start": "export BROWSER=none && react-scripts start",
+    "build": "react-scripts build && cp -r electron build/electron",
+    "test": "react-scripts test",
+    "start-electron": "export REACT_APP_URL=http://localhost:3000 && electron .",
+    "package-electron": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+},
+  "main": "electron/main.js",
+  "build": {
+    "appId": "github.com/austinjalexander/monorepo-template/electron-app",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "publish": {
+      "owner": "austinjalexander",
+      "provider": "github",
+      "repo": "github.com/austinjalexander/monorepo-template/electron-app"
+    }
+  },
+  "homepage": "./",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^8.0.1",
+    "electron-builder": "^22.3.2"
+  }
+}

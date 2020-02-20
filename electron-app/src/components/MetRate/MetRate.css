@@ -1,0 +1,17 @@
+.MetRate {
+    border: 1px solid #000000;
+    margin: auto;
+    text-align: center;
+    height: 450px;
+    width: 80%;
+}
+
+.MetRate-controls {
+    bottom: 0;
+    position: relative;
+}
+
+.MetRate-linechart {
+    margin: auto;
+    width: 100%;
+}

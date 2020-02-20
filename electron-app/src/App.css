@@ -1,0 +1,48 @@
+html, body, #root {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.Layout {
+  display: grid;
+  grid-template-columns: 70px 3fr;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+    
+.Layout-nav {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Layout-link {
+  background-color: #282c34;
+  color: #61dafb;
+  height: 50px;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.Layout-link:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.Layout-main {
+  background-color: #dddada;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+    
